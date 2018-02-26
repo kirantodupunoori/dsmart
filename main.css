@@ -13,6 +13,8 @@ Verison History:
 body
 {
     font-family: arial;
+    background: url(giphy.gif) no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Sets the background image for the wheel */
@@ -78,4 +80,95 @@ td.pw3
 .margin_bottom
 {
     margin-bottom: 5px;
+}
+
+/*settings button*/
+.settings {
+    width: 30px;
+    float: right;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#settings-div, .error {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.settings-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.settings-table td, table.settings-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table.settings-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#canvasContainer {
+    position: relative;
+    width: 300px;
+}
+
+#canvas {
+    z-index: 1;
+}
+
+#prizePointer {
+    position: absolute;
+    left: 186px;
+    top: 12px;
+    z-index: 999;
+}
+
+#spin_button {
+    width: 180px;
 }
