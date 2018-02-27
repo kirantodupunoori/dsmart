@@ -76,43 +76,43 @@
                         </tr>
                         <tr>
                             <td>Prize 1</td>
-                            <td><input type="radio" name="prize1" value="ON" checked></td>
-                            <td><input type="radio" name="prize1" value="OFF"></td>
+                            <td><input type="radio" name="prize1" value="ON"></td>
+                            <td><input type="radio" name="prize1" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 2</td>
-                            <td><input type="radio" name="prize2" value="ON" checked></td>
-                            <td><input type="radio" name="prize2" value="OFF"></td>
+                            <td><input type="radio" name="prize2" value="ON"></td>
+                            <td><input type="radio" name="prize2" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 3</td>
-                            <td><input type="radio" name="prize3" value="ON" checked></td>
-                            <td><input type="radio" name="prize3" value="OFF"></td>
+                            <td><input type="radio" name="prize3" value="ON"></td>
+                            <td><input type="radio" name="prize3" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 4</td>
-                            <td><input type="radio" name="prize4" value="ON" checked></td>
-                            <td><input type="radio" name="prize4" value="OFF"></td>
+                            <td><input type="radio" name="prize4" value="ON"></td>
+                            <td><input type="radio" name="prize4" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 5</td>
-                            <td><input type="radio" name="prize5" value="ON" checked></td>
-                            <td><input type="radio" name="prize5" value="OFF"></td>
+                            <td><input type="radio" name="prize5" value="ON"></td>
+                            <td><input type="radio" name="prize5" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 6</td>
-                            <td><input type="radio" name="prize6" value="ON" checked></td>
-                            <td><input type="radio" name="prize6" value="OFF"></td>
+                            <td><input type="radio" name="prize6" value="ON"></td>
+                            <td><input type="radio" name="prize6" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 7</td>
-                            <td><input type="radio" name="prize7" value="ON" checked></td>
-                            <td><input type="radio" name="prize7" value="OFF"></td>
+                            <td><input type="radio" name="prize7" value="ON"></td>
+                            <td><input type="radio" name="prize7" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 8</td>
-                            <td><input type="radio" name="prize8" value="ON" checked></td>
-                            <td><input type="radio" name="prize8" value="OFF"></td>
+                            <td><input type="radio" name="prize8" value="ON"></td>
+                            <td><input type="radio" name="prize8" value="OFF" checked></td>
                         </tr>
                         <tr>
                             <td>Prize 9</td>
@@ -241,23 +241,24 @@
                     //var randomNumer = Math.floor(Math.random() * 100) + 1;
                     var stopAt;
                     //console.log("randomNumber:" + randomNumer);
-                    if (document.querySelector('input[name=prize1]:checked').value === "ON" && spinCount == 5) {
+                    if (document.querySelector('input[name=prize1]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 17; // prize 1
-                    } else if (document.querySelector('input[name=prize2]:checked').value === "ON" && spinCount == 10) {
+                    } else if (document.querySelector('input[name=prize2]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 53; // prize 2
-                    } else if (document.querySelector('input[name=prize3]:checked').value === "ON" && spinCount == 15) {
+                    } else if (document.querySelector('input[name=prize3]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 89; // prize 3
-                    } else if (document.querySelector('input[name=prize4]:checked').value === "ON" && spinCount == 20) {
+                    } else if (document.querySelector('input[name=prize4]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 125; // prize 4
                     } else if (document.querySelector('input[name=prize5]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 161; // prize 5
-                    } else if (document.querySelector('input[name=prize6]:checked').value === "ON" && spinCount == 30) {
+                    } else if (document.querySelector('input[name=prize6]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 197; // prize 6
-                    } else if (document.querySelector('input[name=prize7]:checked').value === "ON" && spinCount == 35) {
+                    } else if (document.querySelector('input[name=prize7]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 233; // prize 7
-                    } else if (document.querySelector('input[name=prize8]:checked').value === "ON" && spinCount == 40) {
+                    } else if (document.querySelector('input[name=prize8]:checked').value === "ON" && spinCount == 25) {
                         stopAt = 269; // prize 8
-                    } else if (document.querySelector('input[name=prize9]:checked').value === "ON" && spinCount < 40) {
+                    } else if (document.querySelector('input[name=prize9]:checked').value === "ON" && (spinCount == 5 ||
+                        spinCount == 10)) {
                         stopAt = 305; // prize 9
                     } else {
                         stopAt = 341; // prize 10
